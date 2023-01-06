@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Open+Sans&display=swap');
+
+:root{
+    font-size: 16px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+  }
+
+body{
+    height: fit-content;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: hsl(36, 100%, 99%);
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+    position: relative
+}
+
+.nav-bar{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.nav-bar img{
+    width: 2.5rem;
+    height: 1.5rem;
+}
+
+.nav-bar ul{
+    display:none;
+    list-style: none;
+}
+
+.nav-bar ul li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 59%);
+}
+
+.nav-bar ul li a:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.container{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main-new.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.new-description{
+    display: flex;
+    flex-direction: column;
+}
+
+.new-description img{
+    width: 100%;
+    height: 100%;
+}
+
+.text-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.text-section h2{
+    display: flex;
+    font-size: 3rem;
+    font-weight: 800;
+    color: hsl(240, 100%, 5%);
+    margin: 1rem 0rem;
+}
+
+.text-section span{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-section span p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:  hsl(236, 13%, 42%);
+}
+
+.text-section span a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 4rem;
+    text-decoration: none;
+    background-color:  hsl(5, 85%, 63%);
+    color: hsl(36, 100%, 99%);
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.text-section span a:hover{
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+
+.new-list{
+    width:100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: hsl(240, 100%, 5%);
+    color:hsl(36, 100%, 99%); ;
+}
+
+.new-list h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    color: hsl(35, 77%, 62%);
+}
+
+.list-section h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.list-section a{
+    text-decoration:none;
+
+}
+
+.list-section a:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+
+.list-section p{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.more-news-container{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin: 0rem 0rem 2rem 0rem;
+
+}
+
+.news-card{
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem;
+}
+
+.news-card img{
+    width: 10rem;
+    height: 100%;
+}
+
+.news-card .text-section h2{
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0rem 0rem 0rem 1rem;
+    color: hsl(233, 8%, 79%);
+}
+
+.news-card .text-section h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0rem 0rem 0rem 1rem;
+    color: hsl(240, 100%, 5%);
+}
+
+.news-card .text-section a{
+    text-decoration: none;
+}
+
+.news-card .text-section a:hover{
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+}
+
+.news-card .text-section p{
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0rem 0rem 0rem 1rem;
+    color:  hsl(236, 13%, 42%);
+}
+
+/* desktop design */
+
+@media screen and (min-width: 768px){
+
+    #scroll-menu{
+        display: none;
+    }
+
+    .nav-bar ul{
+        display: flex;
+    }
+
+    .nav-bar ul li:hover{
+        color: hsl(5, 85%, 63%);
+        cursor: pointer;
+    }
+
+    .container{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .main-new-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    .new-description{
+        width: 200%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0rem 1rem 0rem 0rem;
+    }
+
+    .new-description img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .new-description .text-section{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        margin: 1rem;
+    }
+
+    .new-list{
+        margin: 0rem 0rem 1rem 0rem;
+    }
+
+
+    
+
+}

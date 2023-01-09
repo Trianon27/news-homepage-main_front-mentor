@@ -421,7 +421,6 @@ header > img{
     }
     
     .new-list{
-        /* max-width: 35%; */
         max-width: 30%;
         min-width:27.5%;
         height: fit-content;

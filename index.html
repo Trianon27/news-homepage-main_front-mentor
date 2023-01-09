@@ -16,18 +16,23 @@
   </style> -->
 </head>
 <body>
-
-  <nav class="nav-bar">
-    <img src="./assets/images/logo.svg" alt="logo">
-    <img src="./assets/images/icon-menu.svg" id="scroll-menu">
-    <ul>
-      <li><a>Home</a></li>
-      <li><a>New</a></li>
-      <li><a>Popular</a></li>
-      <li><a>Trending</a></li>
-      <li><a>Categories</a></li>
-    </ul>
-  </nav>
+  <div class="initial"> 
+    <header class="nav-bar">
+      <img src="./assets/images/logo.svg" alt="logo">
+      <img src="./assets/images/icon-menu.svg" id="scroll-menu">
+      <img src="assets/images/icon-menu-close.svg" alt="menu close icon" id="scroll-close"> 
+    </header>
+    <nav class="nav-container" id="open">
+      <div class="nav-items">
+        <a>Home</a>
+        <a>New</a>
+        <a>Popular</a>
+        <a>Trending</a>
+        <a>Categories</a>
+      </div>
+      <div class="nav__overlay"></div>
+    </nav>
+  </div>
 
   <div class="container">
     <div class="main-new-container">
@@ -68,6 +73,11 @@
         </section>
       </div> -->
     </div>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Santiago</a>.
+    </div>
   </div>
 
 
@@ -107,11 +117,11 @@
   The Growth of Gaming
   How the pandemic has sparked fresh opportunities. -->
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Santiago</a>.
-  </div>
 
+
+  <!--New way of create html 
+    div.clases#id[type="text"]
+  -->
 
 </body>
 <script src="index.js"></script>

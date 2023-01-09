@@ -48,7 +48,7 @@ function createCard(card){
               <h3> <a>${card.title} </a> </h3>
               <p>${card.text}</p>
             </section>
-            <br>
+            <hr>
           </div>
     `
 }
@@ -92,4 +92,39 @@ appendCard(cards);
 
 appendNews(news);
 
+
+document.querySelector('#scroll-menu').addEventListener("click", () =>{
+    const nav = document.querySelector(".nav-container");
+    const menu = document.querySelector("#scroll-menu");
+    const close = document.querySelector("#scroll-close");
+    nav.classList.add("nav-open")
+    menu.style.display = "none";
+    close.style.display = "block";
+})
+
+document.querySelector('#scroll-close').addEventListener("click", () =>{
+    const nav = document.querySelector(".nav-container");
+    const menu = document.querySelector("#scroll-menu");
+    const close = document.querySelector("#scroll-close");
+    nav.classList.remove("nav-open")
+    menu.style.display = "block";
+    close.style.display = "none";
+})
+
+
+window.addEventListener("resize", () =>{
+    const nav = document.querySelector(".nav-container");
+    const menu = document.querySelector("#scroll-menu");
+    const close = document.querySelector("#scroll-close");
+    if(window.innerWidth >= 800 && window.innerHeight <= 1000){
+        nav.classList.remove("nav-open");
+        menu.style.display = "none";
+        close.style.display = "none";
+    }
+    else{
+        nav.classList.remove("nav-open");
+        menu.style.display = "block";
+        close.style.display = "none";
+    }
+})
 

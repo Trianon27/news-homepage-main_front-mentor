@@ -223,7 +223,7 @@ header > img{
 }
 
 .new-card{
-    margin-top: 1rem;
+    margin: 30px 0px;
 }
 
 .more-news-container{
@@ -245,8 +245,8 @@ header > img{
 
 .news-card img{
     max-width: 35%;
-    width: 20rem;
-    height: 100%;
+    width: 12.5rem;
+    height: 20%;
 }
 
 .news-card .text-section h2{
@@ -280,13 +280,15 @@ header > img{
     font-weight: 400;
     margin: 0rem 0rem 0rem 1rem;
     color:  hsl(236, 13%, 42%);
+    max-width: 20rem;
+    min-width: 35%;
 }
 
 
 
 /* desktop design */
 
-@media screen and (min-width: 800px) and (max-height: 1000px){
+@media screen and (min-width: 850px) and (max-height: 1000px){
     :root{
         font-size: 12px;
     }
@@ -300,7 +302,7 @@ header > img{
     }
 
     body{
-        padding: 2rem 10rem;
+        padding: 2rem 9rem;
     
     }
 
@@ -379,7 +381,8 @@ header > img{
         display: flex;
         flex-direction: column;
         margin-right: 2rem;
-        width: 73%;
+        max-width: 746px;
+        min-width: 65.5%;
     }
     
     .new-description img{
@@ -396,18 +399,22 @@ header > img{
     
     .new-description .text-section h2{
         display: flex;
-        font-size: 3.5rem;
+        font-size: 5rem;
+        width: 400px;
+        margin:0;
+        margin-right: 2rem;
     }
     
     .new-description .text-section span{
-        width: 100%;
+        width: 385px;
         display: flex;
         flex-direction: column;
-        margin-top: 0;
+        margin: 20px;
     }
     
     .new-description .text-section span p{
         font-size: 1.25rem;
+        margin-bottom: 4rem;
     }
     
     .new-description .text-section span a{
@@ -421,8 +428,8 @@ header > img{
     }
     
     .new-list{
-        max-width: 30%;
-        min-width:27.5%;
+        max-width: 365px;
+        min-width:30%;
         height: fit-content;
         display: flex;
         flex-direction: column;
@@ -434,7 +441,7 @@ header > img{
     
     
     .list-section h3{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
     
     .list-section a{
@@ -454,9 +461,7 @@ header > img{
         color:  hsl(233, 8%, 79%)
     }
     
-    .new-card{
-        margin-top: 1rem;
-    }
+ 
     
     .more-news-container{
         width: 100%;
@@ -469,3 +474,15 @@ header > img{
     
 }
 
+@media screen and (max-width: 250px){
+    :root{
+        font-size: 8px;
+    }
+}
+
+
+@media screen and (max-width: 150px){
+    :root{
+        font-size: 6px;
+    }
+}

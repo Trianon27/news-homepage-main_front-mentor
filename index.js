@@ -43,13 +43,13 @@ const news = [
 //fucntion that craetes the card
 function createCard(card){
     return `
-    <div class="new-card">
+        <div class="new-card">
             <section class="list-section">
               <h3> <a>${card.title} </a> </h3>
               <p>${card.text}</p>
             </section>
-            <hr>
-          </div>
+        </div>
+        <hr>
     `
 }
 
@@ -116,7 +116,7 @@ window.addEventListener("resize", () =>{
     const nav = document.querySelector(".nav-container");
     const menu = document.querySelector("#scroll-menu");
     const close = document.querySelector("#scroll-close");
-    if(window.innerWidth >= 800 && window.innerHeight <= 1000){
+    if(window.innerWidth >= 850 && window.innerHeight <= 1000){
         nav.classList.remove("nav-open");
         menu.style.display = "none";
         close.style.display = "none";

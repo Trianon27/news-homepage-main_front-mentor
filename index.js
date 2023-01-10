@@ -23,19 +23,22 @@ const news = [
         number: "01",
         title: "Reviving Retro PCs",
         description: "What happens when old PCs are given modern upgrades?",
-        image: "assets/images/image-retro-pcs.jpg"
+        image: "assets/images/image-retro-pcs.jpg",
+        alt_description: "A retro PC"
     },
     {
         number: "02",
         title: "Top 10 Laptops of 2022",
         description: "Our best picks for various needs and budgets.",
-        image: "assets/images/image-top-laptops.jpg"
+        image: "assets/images/image-top-laptops.jpg",
+        alt_description: "the keyboard red of a laptop"
     },
     {
         number: "03",
         title: "The Growth of Gaming",
         description: "How the pandemic has sparked fresh opportunities.",
-        image: "assets/images/image-gaming-growth.jpg"
+        image: "assets/images/image-gaming-growth.jpg",
+        alt_description: "A hand throwing a gaming controller"
     }
 
 ]
@@ -57,7 +60,7 @@ function createCard(card){
 function createNews(newContent){
     return `
     <div class="news-card">
-        <img src="${newContent.image}">
+        <img src="${newContent.image}" alt="${newContent.alt_description}">
         <section class="text-section">
           <h2>${newContent.number}</h2>
           <h3> <a>${newContent.title}</a> </h3>
